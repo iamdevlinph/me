@@ -20,6 +20,7 @@ a {
 
 a:hover {
     color: #CD5353 !important;
+    outline: 1px dashed;
 }
 
 #landing-main {
@@ -40,6 +41,7 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
     color: #AAA;
+    margin-bottom: 2px;
 }
 
 #landing-main #brand a.brand-link {

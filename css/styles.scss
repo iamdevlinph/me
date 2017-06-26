@@ -23,6 +23,7 @@ a {
     transition: color .3s ease-in-out;
     &:hover {
         color: $red !important;
+        outline: 1px dashed;
     }
 }
 
@@ -42,6 +43,7 @@ a {
         margin-left: 0;
         margin-right: 0;
         color: $grey;
+        margin-bottom: 2px;
         a.brand-link {
             color: $grey;
             font-size: 20px;
