@@ -15,7 +15,7 @@ a {
   -o-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out; }
   a:hover {
-    color: #CD5353 !important; }
+    color: #B52E31 !important; }
 
 #landing-main {
   position: absolute;
@@ -38,7 +38,7 @@ a {
       color: #AAA;
       font-size: 20px; }
     #landing-main #brand span.brand-main {
-      color: #CD5353; }
+      color: #B52E31; }
   #landing-main #tag-line {
     margin-top: 0px; }
   #landing-main .social-link {
