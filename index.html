@@ -6,8 +6,8 @@
 
   <!-- META -->
   <meta charset="utf-8">
-  <meta name="description" content="Devlin Pajaron. JavaScript Developer"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Devlin Pajaron. JavaScript Developer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Resources -->
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
@@ -35,7 +35,7 @@
     <p id='tag-line'>
       JavaScript Fatigue
     </p>
-    <p class='animated bounce'>
+    <p class='hidden' id='social-links-container'>
       <a class='social-link' href='https://github.com/iamdevlinph' alt='Github' title='Github'><i class='fa fa-github'></i></a>
       <a class='social-link' href='https://www.linkedin.com/in/iamdevlinph' alt='Linkedin' title='Linkedin'><i class='fa fa-linkedin'></i></a>
       <a class='social-link' href='https://stackoverflow.com/users/4620773/iamdevlinph' alt='StackOverflow' title='StackOverflow'><i class='fa fa-stack-overflow'></i></a>
@@ -45,6 +45,12 @@
       <a class='social-link' href='https://iamdevlinph.github.io/resume/' alt='Resume' title='Resume'><i class='fa fa-file-text'></i></a>
     </p>
   </div>
+
+  <script>
+    document.getElementById('brand').addEventListener('mouseover', function(){
+      document.getElementById('social-links-container').className = 'animated bounce';
+    });
+  </script>
 </body>
 
 </html>
