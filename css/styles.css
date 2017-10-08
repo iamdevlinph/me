@@ -48,5 +48,7 @@ a {
 @media only screen and (min-width: 500px) {
   .hidden {
     display: none; } }
+.not-visible {
+  visibility: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
