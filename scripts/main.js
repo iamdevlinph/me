@@ -12,7 +12,8 @@ const tagLines = [
   "Civil War: Spaces vs Tabs",
   ";",
   "Still looking for the semi-colon",
-  "I did not hit her"
+  "I did not hit her",
+  "The word 'bed' looks like a bed *mindblown*"
 ]
 
 const tagLineP = document.getElementById('tag-line');
