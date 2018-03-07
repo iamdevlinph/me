@@ -13,7 +13,8 @@ const tagLines = [
   ";",
   "Still looking for the semi-colon",
   "I did not hit her",
-  "The word 'bed' looks like a bed *mindblown*"
+  "The word 'bed' looks like a bed *mindblown*",
+  "ablublu"
 ]
 
 const tagLineP = document.getElementById('tag-line');
