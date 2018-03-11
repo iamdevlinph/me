@@ -14,7 +14,8 @@ const tagLines = [
   "Still looking for the semi-colon",
   "I did not hit her",
   "The word 'bed' looks like a bed *mindblown*",
-  "ablublu"
+  "ablublu",
+  "Is the 'S' or the 'C' silent in scent? :O",
 ]
 
 const tagLineP = document.getElementById('tag-line');
