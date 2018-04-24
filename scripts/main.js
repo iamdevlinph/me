@@ -1,7 +1,6 @@
 (animateSocialLinks = () => {
   document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('social-links-container').className = 'animated flipInX';
-    console.log('oh, hi mark')
   });
 })();
 
@@ -12,7 +11,6 @@ const tagLines = [
   "Civil War: Spaces vs Tabs",
   ";",
   "Still looking for the semi-colon",
-  "I did not hit her",
   "The word 'bed' looks like a bed *mindblown*",
   "ablublu",
   "Is the 'S' or the 'C' silent in scent? :O",
