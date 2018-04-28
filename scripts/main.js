@@ -7,7 +7,6 @@
 const tagLines = [
   "JavaScript Developer",
   "Good day for fishin' ain't it?",
-  "Why can't we screenshot the brightness of our phone? Hmm",
   "Civil War: Spaces vs Tabs",
   ";",
   "Still looking for the semi-colon",
