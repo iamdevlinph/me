@@ -13,6 +13,7 @@ const tagLines = [
   "The word 'bed' looks like a bed *mindblown*",
   "ablublu",
   "Is the 'S' or the 'C' silent in scent? :O",
+  "Have a day :D",
 ]
 
 const tagLineP = document.getElementById('tag-line');
