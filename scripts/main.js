@@ -6,13 +6,6 @@
 
 const tagLines = [
   "JavaScript Developer",
-  "Good day for fishin' ain't it?",
-  "Civil War: Spaces vs Tabs",
-  ";",
-  "Still looking for the semi-colon",
-  "The word 'bed' looks like a bed *mindblown*",
-  "ablublu",
-  "Is the 'S' or the 'C' silent in scent? :O",
   "Have a day :D",
 ]
 
