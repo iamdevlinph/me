@@ -4,7 +4,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #444;
-  margin: 0; }
+  margin: 0;
+}
 
 a {
   color: #444;
@@ -13,9 +14,12 @@ a {
   -webkit-transition: color .3s ease-in-out;
   -moz-transition: color .3s ease-in-out;
   -o-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out; }
-  a:hover {
-    color: #B52E31 !important; }
+  transition: color .3s ease-in-out;
+}
+
+a:hover {
+  color: #B52E31 !important;
+}
 
 #landing-main {
   position: absolute;
@@ -25,30 +29,45 @@ a {
   top: 50%;
   left: 50%;
   margin-left: -160px;
-  margin-top: -120px; }
-  #landing-main #brand {
-    display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    color: #AAA;
-    margin-bottom: 2px; }
-    #landing-main #brand a.brand-link {
-      color: #AAA;
-      font-size: 20px; }
-    #landing-main #brand span.brand-main {
-      color: #B52E31; }
-  #landing-main #tag-line {
-    margin-top: 0px; }
-  #landing-main .social-link {
-    font-size: 20px;
-    margin: 0 7px; }
+  margin-top: -120px;
+}
+
+#landing-main #brand {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  color: #AAA;
+  margin-bottom: 2px;
+}
+
+#landing-main #brand a.brand-link {
+  color: #AAA;
+  font-size: 20px;
+}
+
+#landing-main #brand span.brand-main {
+  color: #B52E31;
+}
+
+#landing-main #tag-line {
+  margin-top: 0px;
+}
+
+#landing-main .social-link {
+  font-size: 20px;
+  margin: 0 7px;
+}
 
 @media only screen and (min-width: 500px) {
   .hidden {
-    display: none; } }
+    display: none;
+  }
+}
+
 .not-visible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=styles.css.map */
