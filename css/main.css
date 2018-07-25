@@ -32,43 +32,8 @@ a:hover {
   color: #B52E31 !important;
 }
 
-#landing-main {
-  grid-area: main;
-  text-align: center;
-}
-
-#landing-main #brand {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  color: #AAA;
-  margin-bottom: 2px;
-}
-
-#landing-main #brand a.brand-link {
-  color: #AAA;
-  font-size: 20px;
-}
-
-#landing-main #brand span.brand-main {
-  color: #B52E31;
-}
-
-#landing-main #tag-line {
-  margin-top: 0px;
-}
-
-#landing-main .social-link {
-  font-size: 20px;
-  margin: 0 7px;
-}
-
-@media only screen and (min-width: 500px) {
-  .hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
 }
 
 .not-visible {

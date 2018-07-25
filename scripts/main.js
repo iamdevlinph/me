@@ -1,13 +1,7 @@
 (function () {
-  animateSocialLinks();
-
   // show tag line
   showTagLine();
 })();
-
-function animateSocialLinks() {
-  $('#social-links-container').attr('class', 'animated flipInX')
-}
 
 function showTagLine() {
   var tagLines = [
@@ -20,7 +14,5 @@ function showTagLine() {
     return tagLines[Math.floor(Math.random() * len) + 0];
   }
 
-  $('#tag-line').removeClass('hidden');
   $('#tag-line').text(getRandomTag(tagLines));
-
 }
