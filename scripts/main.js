@@ -14,5 +14,5 @@ function showTagLine() {
     return tagLines[Math.floor(Math.random() * len) + 0];
   }
 
-  $('#tag-line').text(getRandomTag(tagLines));
+  document.getElementById('tag-line').innerHTML = getRandomTag(tagLines);
 }

@@ -9,14 +9,6 @@ body {
   overflow: hidden;
 }
 
-body.grid-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "top"
-    "main"
-    "bottom";
-}
 
 a {
   color: #444;
