@@ -4,6 +4,7 @@
 })();
 
 function activate() {
+  var list =  [];
   var issues = {
     urls: [],
     badge: []
@@ -33,18 +34,21 @@ function activate() {
 
     var repoArr = repos[repoAuthor];
     repoArr.forEach(function (repoName) {
-      issues.urls.push('https://github.com/' + repoAuthor + '/' + repoName + '/issues');
-      issues.badge.push('https://img.shields.io/github/issues/' + repoAuthor + '/' + repoName + '.svg?style=flat-square');
-      prs.urls.push('https://github.com/' + repoAuthor + '/' + repoName + '/pulls');
-      prs.badge.push('https://img.shields.io/github/issues-pr/' + repoAuthor + '/' + repoName + '.svg?style=flat-square');
+      list.push({
+        author: repoAuthor,
+        repo: repoName,
+        issueUrl: 'https://github.com/' + repoAuthor + '/' + repoName + '/issues',
+        issueBadge: 'https://img.shields.io/github/issues/' + repoAuthor + '/' + repoName + '.svg?style=flat-square',
+        prUrl: 'https://github.com/' + repoAuthor + '/' + repoName + '/pulls',
+        prBadge: 'https://img.shields.io/github/issues-pr/' + repoAuthor + '/' + repoName + '.svg?style=flat-square'
+      });
     });
   }
 
   // draw page
-  drawPage(issues, prs);
+  drawPage(list);
 }
 
-function drawPage(issues, prs) {
-  console.log(issues)
-  console.log(prs)
+function drawPage(list) {
+  console.log(list)
 }
