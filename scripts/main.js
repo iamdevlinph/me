@@ -1,24 +1,26 @@
-(animateSocialLinks = () => {
-  document.addEventListener("DOMContentLoaded", function (event) {
-    document.getElementById('social-links-container').className = 'animated flipInX';
-  });
+(function () {
+  animateSocialLinks();
+
+  // show tag line
+  showTagLine();
 })();
 
-const tagLines = [
-  "JavaScript Developer",
-  "Have a day :D",
-]
+function animateSocialLinks() {
+  $('#social-links-container').attr('class', 'animated flipInX')
+}
 
-const tagLineP = document.getElementById('tag-line');
+function showTagLine() {
+  var tagLines = [
+    "JavaScript Developer",
+    "Have a day :D",
+  ]
 
-document.onreadystatechange = function (e) {
-  if (document.readyState === 'complete') {
-    tagLineP.style.display = 'block';
-    tagLineP.innerHTML = getRandomTag(tagLines);
+  function getRandomTag(tagLines) {
+    var len = tagLines.length;
+    return tagLines[Math.floor(Math.random() * len) + 0];
   }
-};
 
-getRandomTag = (tagLines) => {
-  const len = tagLines.length;
-  return tagLines[Math.floor(Math.random() * len) + 0];
+  $('#tag-line').removeClass('hidden');
+  $('#tag-line').text(getRandomTag(tagLines));
+
 }

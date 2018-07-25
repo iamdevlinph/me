@@ -1,6 +1,6 @@
 # Status Tracker
 
-## personal
+### personal
 
 ##### resume
 
@@ -32,7 +32,7 @@
 [me-pr-img]: https://img.shields.io/github/issues-pr/iamdevlinph/me.svg?style=flat-square
 [me-pr-url]: https://github.com/iamdevlinph/me/pulls
 
-## codes and coffees
+### codes and coffees
 
 ##### common-utils-pkg
 

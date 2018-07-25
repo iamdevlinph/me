@@ -24,11 +24,11 @@ a:hover {
 #landing-main {
   position: absolute;
   left: 0;
-  width: 320px;
+  width: 620px;
   text-align: center;
   top: 50%;
   left: 50%;
-  margin-left: -160px;
+  margin-left: -310px;
   margin-top: -120px;
 }
 
