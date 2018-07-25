@@ -31,3 +31,7 @@ a:hover {
 .not-visible {
   visibility: hidden;
 }
+
+.center {
+  text-align: center;
+}
