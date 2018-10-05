@@ -30,6 +30,10 @@ body {
   padding-top: 20%;
 }
 
+#name > div:nth-child(1) {
+  color: #AAA;
+}
+
 #name .red {
   color: #B52E31;
 }
