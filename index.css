@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family:"Open Sans", Arial, sans-serif;
+}
+
+#landing-main {
+  display: grid;
+  height: 100vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #landing-main {
+    grid-template-rows: 100px repeat(3, min-content);
+    grid-template-areas:
+      "top"
+      "logo"
+      "name"
+      "links";
+    row-gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #landing-main {
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: 1fr 200px 200px 1fr;
+    grid-template-areas:
+      "top  top   top   top"
+      "left logo  name  right"
+      "left logo  links right"
+      "bot  bot   bot   bot";
+  }
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#name {
+  grid-area: name;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  #name {
+    padding-top: 20%;
+  }
+}
+
+#name > div:nth-child(1) {
+  color: #AAA;
+}
+
+#name .red {
+  color: #B52E31;
+}
+
+#name .tag {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+#links {
+  grid-area: links;
+}
+
+#links a {
+  color: black;
+  font-size: 40px;
+  margin: 0 10px;
+  transition: all 0.5s ease;
+}
+
+#links a:hover {
+  color: #B52E31;
+}
+
