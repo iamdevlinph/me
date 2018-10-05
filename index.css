@@ -11,7 +11,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   #landing-main {
-    grid-template-rows: 100px repeat(3, min-content);
+    grid-template-rows: 80px repeat(3, min-content);
     grid-template-areas:
       "top"
       "logo"
@@ -39,7 +39,7 @@ body {
 
 #name {
   grid-area: name;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -59,9 +59,10 @@ body {
 }
 
 #name .tag {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   text-transform: none;
+  text-decoration: underline;
 }
 
 #links {
@@ -70,9 +71,10 @@ body {
 
 #links a {
   color: black;
-  font-size: 40px;
-  margin: 0 10px;
+  display: grid;
+  margin: 5px 0;
   transition: all 0.5s ease;
+  text-decoration: none;
 }
 
 #links a:hover {
