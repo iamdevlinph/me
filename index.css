@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family:"Open Sans", Arial, sans-serif;
+}
+
+#landing-main {
+  display: grid;
+  grid-template-columns: 1fr 400px 400px 1fr;
+  grid-template-rows: 1fr 200px 200px 1fr;
+  grid-template-areas:
+    "top  top   top   top"
+    "left logo  name  right"
+    "left logo  links right"
+    "bot  bot   bot   bot";
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  height: 100vh;
+  text-align: center;
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#name {
+  grid-area: name;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 20%;
+}
+
+#name .red {
+  color: #B52E31;
+}
+
+#name .tag {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+#links {
+  grid-area: links;
+}
+
+#links a {
+  color: black;
+  font-size: 40px;
+  margin: 0 10px;
+  transition: all 0.5s ease;
+}
+
+#links a:hover {
+  color: #B52E31;
+}
