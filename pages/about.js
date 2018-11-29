@@ -2,7 +2,6 @@ import HomeLayout from '../layouts/HomeLayout';
 
 export default () => (
   <HomeLayout>
-    <p>Hello people</p>
-    <p>This is the home page</p>
+    <p>This is the about page</p>
   </HomeLayout>
 )
