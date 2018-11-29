@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Head, Navbar } from '../components';
 
 const HomeLayout = (props) => {
