@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Head, Navbar } from '../components';
 
 const HomeLayout = (props) => {
@@ -12,3 +13,7 @@ const HomeLayout = (props) => {
 };
 
 export default HomeLayout;
+
+HomeLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
