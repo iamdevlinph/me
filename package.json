@@ -1,0 +1,26 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "me",
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdevlinph/me.git"
+  },
+  "author": "iamdevlinph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamdevlinph/me/issues"
+  },
+  "homepage": "https://github.com/iamdevlinph/me#readme"
+}
