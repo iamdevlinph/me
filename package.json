@@ -3,15 +3,34 @@
   "version": "1.0.0",
   "description": "me",
   "dependencies": {
-    "next": "^6.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "babel-eslint": "^10.0.1",
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "next": "6.1.1",
+    "react": "16.4.2",
+    "react-dom": "16.4.2"
   },
   "devDependencies": {},
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
   },
   "repository": {
     "type": "git",

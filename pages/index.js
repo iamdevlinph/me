@@ -5,4 +5,4 @@ export default () => (
     <p>Hello people</p>
     <p>This is the home page</p>
   </HomeLayout>
-)
+);

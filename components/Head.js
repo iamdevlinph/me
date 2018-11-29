@@ -5,14 +5,18 @@ export default () => (
   <Fragment>
     <Head>
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-3"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-3" />
+      {/* eslint-disable react/no-danger */}
       <script dangerouslySetInnerHTML={{
         __html: `window.dataLayer = window.dataLayer || [];
         function gtag() {
           dataLayer.push(arguments)
         }
         gtag('js', new Date());
-        gtag('config', 'UA-100423670-3');`}} />
+        gtag('config', 'UA-100423670-3');`,
+      }}
+      />
+      {/* eslint-enable react/no-danger */}
       <title>Devlin Pajaron | JavaScript Developer</title>
 
       {/* <!-- META --> */}
@@ -30,4 +34,4 @@ export default () => (
       <link rel="shortcut icon" href="/static/favicon.png" />
     </Head>
   </Fragment>
-)
+);
