@@ -1,7 +1,36 @@
 .navbar {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  background: #ff9c9c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 1px 0px, rgba(0, 0, 0, 0.24) 0px 3px 8px 1px;
+
   &--logo {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 50px;
     cursor: pointer;
+    padding-top: 7px;
+  }
+
+  &--links {
+    text-align: right;
+
+    .link {
+      cursor: pointer;
+      text-transform: uppercase;
+      color: #353535;
+      font-weight: bold;
+      display: inline-block;
+      padding: 20px 10px;
+
+      &:hover {
+        background: #b52e3154;
+        height: 100%;
+      }
+
+      &.active-link {
+        background: #b52e31;
+        color: white;
+      }
+    }
   }
 }

@@ -9,6 +9,19 @@ body {
 
 .mainLayout {
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 59px 1fr;
+  grid-template-areas:
+    "top-pad"
+    "navbar"
+    "content-area";
   height: 100vh;
+}
+
+#top-bar {
+  border-top: 5px solid #B52E31;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
