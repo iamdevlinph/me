@@ -1,15 +1,23 @@
 import Link from 'next/link';
+import styled from 'styled-components';
 
 export default () => (
-  <div>
+  <NavbarSection>
     <Link href="/">
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a>home</a>
+      <NavbarImg src="/static/favicon.png" />
     </Link>
-    {' '}
     <Link href="/about">
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a>about</a>
+      <span>about</span>
     </Link>
-  </div>
+    <Link href="/portfolio">
+      <span>portfolio</span>
+    </Link>
+  </NavbarSection>
 );
+
+const NavbarSection = styled.div``;
+const NavbarImg = styled.img`
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+`;

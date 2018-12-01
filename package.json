@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "me",
   "dependencies": {
+    "@zeit/next-css": "1.0.1",
     "babel-eslint": "10.0.1",
     "eslint": "5.9.0",
     "eslint-config-airbnb": "17.1.0",

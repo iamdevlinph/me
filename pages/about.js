@@ -1,7 +1,7 @@
-import { HomeLayout } from '../src/layouts';
+import { MainLayout } from '../src/layouts';
 
 export default () => (
-  <HomeLayout>
+  <MainLayout>
     <p>This is the about page</p>
-  </HomeLayout>
+  </MainLayout>
 );

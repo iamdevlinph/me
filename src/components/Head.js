@@ -1,8 +1,7 @@
-import { Fragment } from 'react';
 import Head from 'next/head';
 
 export default () => (
-  <Fragment>
+  <>
     <Head>
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-3" />
@@ -30,8 +29,8 @@ export default () => (
       <meta name="twitter:image" content="/static/favicon.png" />
 
       {/* <!-- Resources --> */}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
       <link rel="shortcut icon" href="/static/favicon.png" />
     </Head>
-  </Fragment>
+  </>
 );
