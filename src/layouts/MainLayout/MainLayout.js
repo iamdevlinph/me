@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { Head, Navbar } from '../../components';
-import './MainLayout.css';
+import './MainLayout.scss';
 
 const MainLayout = (props) => {
   const { children } = props;
   return (
-    <MainLayoutArea>
+    <div className="mainLayout">
       <Head />
       <Navbar />
-      <ContentArea>
+      <div>
         {children}
-      </ContentArea>
-    </MainLayoutArea>
+      </div>
+    </div>
   );
 };
 
@@ -21,11 +20,3 @@ export default MainLayout;
 MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-const MainLayoutArea = styled.div`
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  height: 100vh;
-`;
-
-const ContentArea = styled.div``;
