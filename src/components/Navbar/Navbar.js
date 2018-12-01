@@ -25,5 +25,5 @@ const Navbar = (props) => {
 export default withRouter(Navbar);
 
 Navbar.propTypes = {
-  router: PropTypes.node.isRequired,
+  router: PropTypes.object.isRequired,
 };

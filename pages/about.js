@@ -2,6 +2,6 @@ import { MainLayout } from '../src/layouts';
 
 export default () => (
   <MainLayout>
-    <p>This is the about page</p>
+    <p>Hi. I am Devlin. A JavaSript Developer.</p>
   </MainLayout>
 );
