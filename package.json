@@ -25,7 +25,9 @@
     "redux-saga": "0.16.2",
     "redux-saga-firebase": "0.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "redux-devtools-extension": "2.13.7"
+  },
   "resolutions": {
     "ajv": "6.5.5"
   },
