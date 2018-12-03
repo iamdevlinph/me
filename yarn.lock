@@ -4503,6 +4503,16 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
 
+next-redux-saga@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/next-redux-saga/-/next-redux-saga-3.0.0.tgz#8a934483fc48149ff1fd6f091fbbbf884fd2883b"
+  integrity sha512-uc7CgbS03sZUQEdlkiUEP5J/ZGRMvq417BPYD5x7qqyowCyeus3Gtooo801vCM1PvSHlv/WU8BqoQX1cYzhCpg==
+
+next-redux-wrapper@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/next-redux-wrapper/-/next-redux-wrapper-2.0.0.tgz#74587381ff9c762cd85676d9739a51a3aeceed58"
+  integrity sha512-QcaEK7pUelShCk6Epajvp3MZrktt/0bVR0f2ssaZtQ270q80zLhKIKFkVZL8uwqXMnSJInZDSwcAhYhn8/Rpsw==
+
 next@7.0.2:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/next/-/next-7.0.2.tgz#5ff6b3f0e6cf03ce539d5779a55dc1f8fb1759d7"
@@ -5415,7 +5425,7 @@ react-lifecycles-compat@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-redux@^5.1.1:
+react-redux@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.1.1.tgz#88e368682c7fa80e34e055cd7ac56f5936b0f52f"
   integrity sha512-LE7Ned+cv5qe7tMV5BPYkGQ5Lpg8gzgItK07c67yHvJ8t0iaD9kPFPAli/mYkiyJYrs2pJgExR2ZgsGqlrOApg==
@@ -5527,19 +5537,19 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
-redux-saga-firebase@^0.14.1:
+redux-saga-firebase@0.14.1:
   version "0.14.1"
   resolved "https://registry.yarnpkg.com/redux-saga-firebase/-/redux-saga-firebase-0.14.1.tgz#abf526e667a221a15d9019ab8a1f9a60669ecbff"
   integrity sha512-JrokI3+zX7cmLI3BtWmmwHCtALF35BccphStY+OtN2QwHfuedakVMh0fwQrkO3qBwyYCK3U6sqOCa5YF3HYUEw==
   dependencies:
     "@babel/runtime" "^7.0.0-beta.56"
 
-redux-saga@^0.16.2:
+redux-saga@0.16.2:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.16.2.tgz#993662e86bc945d8509ac2b8daba3a8c615cc971"
   integrity sha512-iIjKnRThI5sKPEASpUvySemjzwqwI13e3qP7oLub+FycCRDysLSAOwt958niZW6LhxfmS6Qm1BzbU70w/Koc4w==
 
-redux@^4.0.1:
+redux@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
   integrity sha512-R7bAtSkk7nY6O/OYMVR9RiBI+XghjF9rlbl5806HJbQph0LJVHZrU5oaO4q70eUKiqMRqm4y07KLTlMZ2BlVmg==
