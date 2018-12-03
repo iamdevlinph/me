@@ -5,18 +5,19 @@ import './Navbar.scss';
 
 const Navbar = (props) => {
   const { router } = props;
+  const PAGES = ['about', 'blog', 'portfolio'];
+  const urls = PAGES.map(val => (
+    <Link href={`/${val}`} key={val}>
+      <span className={`link ${router.route === `/${val}` && 'active-link'}`}>{val}</span>
+    </Link>
+  ));
   return (
     <div className="navbar">
       <Link href="/">
         <img className="navbar--logo" src="/static/favicon.png" alt="logo" />
       </Link>
       <div className="navbar--links">
-        <Link href="/about">
-          <span className={`link ${router.route === '/about' && 'active-link'}`}>about</span>
-        </Link>
-        <Link href="/portfolio">
-          <span className={`link ${router.route === '/portfolio' && 'active-link'}`}>portfolio</span>
-        </Link>
+        {urls}
       </div>
     </div>
   );
