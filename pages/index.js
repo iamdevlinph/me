@@ -5,13 +5,6 @@ import PropTypes from 'prop-types';
 import { MainLayout } from '../src/layouts';
 import { actions as commonActions } from '../src/sagaDucks/common/common';
 
-// export default () => (
-//   <MainLayout>
-//     <span>Hello people</span>
-//     <p>This is the home page</p>
-//   </MainLayout>
-// );
-
 class Index extends Component {
   componentDidMount() {
     const { init } = this.props;

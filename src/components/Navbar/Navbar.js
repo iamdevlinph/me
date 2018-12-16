@@ -4,12 +4,29 @@ import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import './Navbar.scss';
 
+const setActiveLink = (curRoute, nav) => {
+  let linkClass = 'link';
+  switch (curRoute) {
+    case '/blog':
+    case '/post':
+      if (nav === '/blog') {
+        linkClass += ' active-link';
+      }
+      break;
+    default:
+      if (curRoute === nav) {
+        linkClass += ' active-link';
+      }
+  }
+  return linkClass;
+};
+
 const Navbar = (props) => {
   const { router } = props;
   const PAGES = ['about', 'blog', 'portfolio'];
   const urls = PAGES.map(val => (
     <Link href={`/${val}`} key={val}>
-      <span className={`link ${router.route === `/${val}` && 'active-link'}`}>{val}</span>
+      <span className={setActiveLink(router.route, `/${val}`)}>{val}</span>
     </Link>
   ));
   return (
