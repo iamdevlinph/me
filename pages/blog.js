@@ -1,34 +1,39 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import fetch from 'isomorphic-unfetch';
 import { MainLayout } from '../src/layouts';
 
-const PostLink = (props) => {
-  const { title, id } = props;
+const Blog = (props) => {
+  const { shows } = props;
   return (
-    <li>
-      <Link as={`/blog/${id}`} href={`/post?title=${title}`}>
-        {/* eslint-disable jsx-a11y/anchor-is-valid */}
-        <a>{title}</a>
-        {/* eslint-enable jsx-a11y/anchor-is-valid */}
-      </Link>
-    </li>
+    <MainLayout>
+      <h1>Batman TV Shows</h1>
+      <ul>
+        {shows.map(({ show }) => (
+          <li key={show.id}>
+            <Link as={`/blog/${show.id}`} href="/post?id=975">
+              <a>{show.name}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </MainLayout>
   );
 };
 
-PostLink.propTypes = {
-  title: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+Blog.getInitialProps = async () => {
+  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
+  const data = await res.json();
+  return {
+    shows: data,
+  };
 };
 
-export default () => (
-  <MainLayout>
-    <span>Hello people</span>
-    <p>This is the blog page</p>
-    <ul>
-      <PostLink title="Hello Next.js" id="hello-nextjs" />
-      <PostLink title="Learn Next.js is awesome" id="learn-nextjs-is-awesome" />
-      <PostLink title="Deploy apps with Zeit" id="deploy-apps-with-zeit" />
-    </ul>
-  </MainLayout>
-);
+export default Blog;
+
+Blog.propTypes = {
+  shows: PropTypes.array.isRequired,
+};
