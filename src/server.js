@@ -9,10 +9,10 @@ app.prepare()
   .then(() => {
     const server = express();
 
-    server.get('/blog/:id', (req, res) => {
+    server.get('/post/:id', (req, res) => {
       const actualPage = '/post';
       const queryParams = { id: req.params.id };
-      app.render(req, res, actualPage, queryParams);
+      return app.render(req, res, actualPage, queryParams);
     });
 
     server.get('*', (req, res) => handle(req, res));
