@@ -2,7 +2,25 @@
   "version": 2,
   "name": "me",
   "builds": [{
-    "src": "package.json",
-    "use": "@now/static-build"
-  }]
+      "src": "/static/*",
+      "use": "@now/static"
+    },
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ],
+  "routes": [{
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/post/(?<slug>.+)",
+      "dest": "/post?id=$slug"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
 }
