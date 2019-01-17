@@ -14,7 +14,7 @@ const Blog = (props) => {
       <ul>
         {shows.map(({ show }) => (
           <li key={show.id}>
-            <Link as={`/post/${show.id}`} href={`/post?id=${show.id}`}>
+            <Link as={`/blog/${show.id}`} href={`/post?id=${show.id}`}>
               <a>{show.name}</a>
             </Link>
           </li>
