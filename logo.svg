@@ -1,36 +1,51 @@
-<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
-    <rect id="p_leg"
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+    <rect id="square_right_bg"
+      height="200"
+      width="50"
+      y="160"
+      x="310"
+      fill="#440101"/>
+    <rect id="square_left_bg"
       height="300"
       width="50"
-      y="100"
-      x="100"
-      fill="#B52E31"/>
-    <rect id="d_leg"
+      y="160"
+      x="160"
+      fill="#440101"/>
+    <rect id="square_top_bg"
+      height="50"
+      width="200"
+      y="160"
+      x="160"
+      fill="#440101"/>
+    <rect id="square_bottom_bg"
+      height="50"
+      width="200"
+      y="310"
+      x="160"
+      fill="#440101"/>
+
+    <rect id="square_right_fd"
       height="300"
       width="50"
-      y="0"
-      x="250"
-      fill="#B52E31"/>
-    <rect id="square_top"
-      height="50"
-      width="200"
-      y="100"
-      x="100"
-      fill="#B52E31"/>
-    <rect id="square_bottom"
-      height="50"
-      width="200"
-      y="250"
-      x="100"
-      fill="#B52E31"/>
-    <rect id="shadow"
-      height="35"
+      y="40"
+      x="290"
+      fill="#BA0202"/>
+    <rect id="square_left_fg"
+      height="200"
       width="50"
-      y="300"
-      x="100"
-      fill="url(#shadow_gradient)"/>
-    <linearGradient id="shadow_gradient" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" style="stop-color:rgb(30,30,30);stop-opacity:0" />
-      <stop offset="100%" style="stop-color:rgb(30,30,30);stop-opacity:1" />
-    </linearGradient>
+      y="140"
+      x="140"
+      fill="#BA0202"/>
+    <rect id="square_top_fg"
+      height="50"
+      width="200"
+      y="140"
+      x="140"
+      fill="#BA0202"/>
+    <rect id="square_bottom_fg"
+      height="50"
+      width="200"
+      y="290"
+      x="140"
+      fill="#BA0202"/>
 </svg>
